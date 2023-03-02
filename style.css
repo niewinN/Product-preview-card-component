@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+    /* min-height: 100vh; */
+    margin: 1.5em;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img {
+    background-image: url('/images/image-product-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 35vh;
+    width: 100%;
+}
+
+.img-text {
+    margin: 0.5em 0;
+    font-size: 1.5rem;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    color: hsl(228, 12%, 48%);
+}
+
+.title {
+    margin-bottom: 0.5em;
+    font-size: 3.2rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%)
+}
+
+.text {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.main-price {
+    margin-right: 1em;
+    font-size: 3rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.second-price {
+    font-size: 1.4rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.button {
+    width: 100%;
+    padding: 1em;
+    text-align-last: center;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer-text {
+    text-decoration: none;
+    color: hsl(158, 36%, 37%);
+}
+
+@media(min-width: 1024px) {
+
+    .main {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        width: 50%;
+    }
+
+    .img {
+        background-image: url('images/image-product-desktop.jpg');
+        width: 50%;
+    }
+
+    .text-box {
+        width: 50%;
+    }
+}
+
+@media(min-width: 1280px) {
+    .card {
+        width: 40%;
+    }
+}
